@@ -474,7 +474,7 @@ function createMenu(config) {
     cancellable: true
   }, config);
 
-  // config 이제 다음과 동일합니다.: {title: "Order", body: "Bar", buttonText: "Send", cancellable: true}
+  // config는 이제 다음과 동일합니다: {title: "Order", body: "Bar", buttonText: "Send", cancellable: true}
   // ...
 }
 
