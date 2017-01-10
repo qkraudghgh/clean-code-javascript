@@ -1629,7 +1629,7 @@ describe('MakeMomentJSGreatAgain', function() {
 
 ## **동시성(Concurrency)**
 ### Callback 대신 Promise를 사용하세요
-Callback은 깔끔하지 않습니다. 그리고 엄청나게 많은 괄호 중첩을 만들어 냅니다.
+Callback은 깔끔하지 않습니다. 그리고 엄청나게 많은 중괄호 중첩을 만들어 냅니다.
 ES2015/ES6에선 Promise가 내장되어 있습니다. 이걸 쓰세요!
 
 **안좋은 예:**
