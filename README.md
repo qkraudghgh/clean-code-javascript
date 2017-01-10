@@ -92,7 +92,7 @@ for (let i = 0; i < MINUTES_IN_A_YEAR; i++) {
 ```
 **[⬆ 상단으로](#목차)**
 
-### 독립 변수를 사용하세요
+### 의도를 나타내는 변수들을 사용하세요
 **안좋은 예:**
 ```javascript
 const cityStateRegex = /^(.+)[,\\s]+(.+?)\s*(\d{5})?$/;
