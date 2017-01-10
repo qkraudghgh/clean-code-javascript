@@ -1526,7 +1526,7 @@ class Employee {
   // ...
 }
 
-// 이 코드가 안좋은 이유는 Employees가 tax data를 가지고 있기 때문입니다.
+// 이 코드가 안좋은 이유는 Employees가 tax data를 "가지고" 있기 때문입니다.
 // EmployeeTaxData는 Employee 타입이 아닙니다.
 class EmployeeTaxData extends Employee {
   constructor(ssn, salary) {
