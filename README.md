@@ -524,7 +524,7 @@ function createTempFile(name) {
 **안좋은 예:**
 ```javascript
 // 아래 함수에 의해 참조되는 전역 변수입니다.
-// 다음과 같은 전역 변수명을 참조하는 함수가 또 있다면 이 변수는 이제 배열이 될 수도 있고, 우리가 예상한 것이 아닐 수 있습니다.
+// 이 전역 변수를 사용하는 또 하나의 함수가 있다고 생각해보세요. 이제 이 변수는 배열이 될 것이고, 프로그램을 망가뜨리겠죠.
 let name = 'Ryan McDermott';
 
 function splitIntoFirstAndLastName() {
