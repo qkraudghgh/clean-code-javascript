@@ -27,8 +27,8 @@
 ## 소개(Introduction)
 ![코드를 읽을 때 소리 지르는 숫자로 소프트웨어 품질을 추정하는 유머 사진](http://www.osnews.com/images/comics/wtfm.jpg)
 
-이 글은 소프트웨어 방법론에 관한 책중 Robert C. Martin's의 책인 [*Clean Code*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)에 있는 내용을 Javascript language에 적용시켜 적은 글 입니다.
-이 글은 단순히 Style Guide가 아니라 Javascript로 코드를 작성할때 읽기 쉽고, 재사용 가능하며 리팩토링 가능하게끔 작성하도록 도와줍니다.
+이 글은 소프트웨어 방법론에 관한 책들 중 Robert C. Martin's의 책인 [*Clean Code*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)에 있는 내용을 JavaScript 언어에 적용시켜 적은 글 입니다.
+이 글은 단순히 Style Guide가 아니라 JavaScript로 코드를 작성할때 읽기 쉽고, 재사용 가능하며 리팩토링 가능하게끔 작성하도록 도와줍니다.
 
 여기있는 모든 원칙이 엄격히 지켜져야하는 것은 아니며, 보편적으로 통용되는 원칙은 아닙니다. 이것들은 지침일 뿐이며 `Clean Code`의 저자가 수년간 경험한 내용을 바탕으로 정리한 것입니다.
 
