@@ -1275,8 +1275,8 @@ class InventoryTracker {
   constructor(items) {
     this.items = items;
 
-    // 안좋은 이유: 특정 요청 구현에 대한 의존성을 만들었습니다.
-    // requestItem은 요청 메소드에 의존해야합니다.
+    // 안좋은 이유: 특정 요청방법 구현에 대한 의존성을 만들었습니다.
+    // requestItems는 한가지 요청방법을 필요로 합니다.
     this.requester = new InventoryRequester();
   }
 
