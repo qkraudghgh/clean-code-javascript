@@ -25,8 +25,7 @@
   10. [주석(Comments)](#주석comments)
   
 ## 소개(Introduction)
-![Humorous image of software quality estimation as a count of how many expletives
-you shout when reading code](http://www.osnews.com/images/comics/wtfm.jpg)
+![코드를 읽을 때 소리 지르는 숫자로 소프트웨어 품질을 추정하는 유머 사진](http://www.osnews.com/images/comics/wtfm.jpg)
 
 이 글은 소프트웨어 방법론에 관한 책중 Robert C. Martin's의 책인 [*Clean Code*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)에 있는 내용을 Javascript language에 적용시켜 적은 글 입니다.
 이 글은 단순히 Style Guide가 아니라 Javascript로 코드를 작성할때 읽기 쉽고, 재사용 가능하며 리팩토링 가능하게끔 작성하도록 도와줍니다.
