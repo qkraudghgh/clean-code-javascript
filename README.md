@@ -1213,7 +1213,7 @@ class DOMTraverser {
 
 const $ = new DOMTraverser({
   rootNode: document.getElementsByTagName('body'),
-  animationModule: function() {} // 대부분의 경우 우리는 DOM을 탐색할 때 애니메이션이 필요하지 않습니다.
+  animationModule: function() {} // 우리는 대부분의 경우 DOM을 탐색할 때 애니메이션이 필요하지 않습니다.
   // ...
 });
 
