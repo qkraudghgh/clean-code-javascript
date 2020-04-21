@@ -884,8 +884,8 @@ function makeBankAccount() {
   // ...
 
   return {
-    balance: 0
     // ...
+    balance: 0
   };
 }
 
