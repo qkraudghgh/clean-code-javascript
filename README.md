@@ -876,53 +876,49 @@ JavaScript는 인터페이스와 타입을 가지고있지 않고 이러한 패�
 * `set`할때 검증로직을 추가하는 것이 코드를 더 간단하게 만듭니다.
 * 내부용 API를 캡슐화 할 수 있습니다.
 * `getting`과 `setting`할 때 로그를 찾거나 에러처리를 하기 쉽습니다.
-* 클래스를 상속해서 디폴트 동작을 재정의할 수 있습니다.
 * 서버에서 객체 속성을 받아올 때 lazy load 할 수 있습니다.
 
 **안좋은 예:**
 ```javascript
-class BankAccount {
-  constructor() {
-    this.balance = 1000;
-  }
+function makeBankAccount() {
+  // ...
+
+  return {
+    balance: 0
+    // ...
+  };
 }
 
-const bankAccount = new BankAccount();
-
-// 신발을 구매할 때...
-bankAccount.balance -= 100;
+const account = makeBankAccount();
+account.balance = 100;
 ```
 
 **좋은 예:**
 ```javascript
-class BankAccount {
-  constructor(balance = 1000) {
-	   this._balance = balance;
+function makeBankAccount() {
+  // private으로 선언된 변수
+  let balance = 0;
+
+  // 아래 return을 통해 public으로 선언된 "getter"
+  function getBalance() {
+    return balance;
   }
 
-  // getter/setter를 정의할 때 `get`, `set` 같은 접두사가 필요하지 않습니다.
-  set balance(amount) {
-      if (this.verifyIfAmountCanBeSetted(amount)) {
-        this._balance = amount;
-      }
-    }
-  
-  get balance() {
-    return this._balance;
+  // 아래 return을 통해 public으로 선언된 "setter"
+  function setBalance(amount) {
+    // ... balance를 업데이트하기 전 검증로직
+    balance = amount;
   }
 
-  verifyIfAmountCanBeSetted(val) {
+  return {
     // ...
-  }
+    getBalance,
+    setBalance
+  };
 }
 
-const bankAccount = new BankAccount();
-    
-// 신발을 구매할 때...
-bankAccount.balance -= shoesPrice;
-
-// balance 값을 얻을 때
-let balance = bankAccount.balance;
+const account = makeBankAccount();
+account.setBalance(100);
 ```
 **[⬆ 상단으로](#목차)**
 
